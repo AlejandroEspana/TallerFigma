@@ -17,7 +17,7 @@ export default function HomePage() {
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
         <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-md bg-white flex items-center justify-center">
-          <Image src="/Img1.png" alt="Profile" width={48} height={48} className="object-cover h-full mix-blend-multiply" />
+          <Image src="/Img1.png" alt="Profile" width={48} height={48} className="object-cover h-full" />
         </div>
         <div className="flex items-center gap-1 font-medium">
           <MapPin size={18} />
@@ -60,12 +60,12 @@ export default function HomePage() {
               onClick={() => setActiveCategory(cat.name)}
               className={`flex items-center gap-2 py-2 px-4 rounded-full transition-colors ${
                 activeCategory === cat.name 
-                  ? "bg-[#D1A3A0] text-white shadow-md" 
+                  ? "bg-[#EBAEAA] text-white shadow-md" 
                   : "bg-white text-gray-600 shadow-sm"
               }`}
             >
               <div className="w-8 h-8 rounded-full overflow-hidden bg-white flex items-center justify-center p-0.5">
-                <Image src={cat.image} alt={cat.name} width={32} height={32} className="object-cover rounded-full h-full mix-blend-multiply" />
+                <Image src={cat.image} alt={cat.name} width={32} height={32} className="object-cover rounded-full h-full" />
               </div>
               <span className={`font-semibold ${activeCategory === cat.name ? "text-white" : "text-gray-600"}`}>
                 {cat.name}
@@ -87,7 +87,7 @@ export default function HomePage() {
           {filteredFoods.map((food) => (
             <Link href={`/details/${food.id}`} key={food.id} className="w-56 bg-white rounded-3xl p-5 shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex flex-col items-center hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] transition-shadow">
               <div className="w-40 h-40 rounded-full overflow-hidden mb-4 shadow-lg border-4 border-white mt-2 bg-white">
-                <Image src={food.image} alt={food.name} width={160} height={160} className="object-cover h-full mix-blend-multiply" />
+                <Image src={food.image} alt={food.name} width={160} height={160} className="object-cover h-full" />
               </div>
               <h3 className="font-bold text-center mb-2 line-clamp-1 w-full text-lg">{food.name}</h3>
               

@@ -94,9 +94,8 @@ export default function DetailsPage({ params }: { params: Promise<{ id: string }
               </div>
             </div>
 
-            {/* Mobile Image Container - Overflows screen */}
             <div className="absolute -right-24 top-0 w-72 h-72 rounded-full overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.15)] border-8 border-white bg-white">
-              <Image src={food.image} alt={food.name} fill className="object-cover mix-blend-multiply" />
+              <Image src={food.image} alt={food.name} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
             </div>
           </div>
 

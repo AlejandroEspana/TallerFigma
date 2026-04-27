@@ -4,25 +4,26 @@ import Link from "next/link";
 export default function LandingPage() {
   return (
     <div className="relative w-full flex-1 flex flex-col items-center justify-between overflow-hidden">
-      {/* Floating Images Area */}
+      {/* Floating Images Area - Static */}
       <div className="relative w-full flex-1 mt-8 min-h-[50vh]">
-        <div className="absolute top-0 -left-6 w-32 h-32 overflow-visible animate-[bounce_8s_infinite]">
-          <Image src="/Img1.png" alt="Food 1" fill className="object-contain mix-blend-multiply" />
+        {/* Floating Images (static positions, no circles, no mix-blend) */}
+        <div className="absolute -top-4 -left-12 w-48 h-48 flex items-center justify-center">
+          <Image src="/Img1.png" alt="Food 1" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-contain" />
         </div>
-        <div className="absolute top-1/4 left-[20%] w-40 h-40 overflow-visible animate-[bounce_6s_infinite_0.5s] z-10">
-          <Image src="/Img2.png" alt="Food 2" fill className="object-contain mix-blend-multiply" />
+        <div className="absolute top-[20%] left-[20%] w-56 h-56 z-10 flex items-center justify-center">
+          <Image src="/Img2.png" alt="Food 2" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-contain" />
         </div>
-        <div className="absolute top-12 -right-8 w-36 h-36 overflow-visible animate-[bounce_7s_infinite_1s]">
-          <Image src="/Img3.png" alt="Food 3" fill className="object-contain mix-blend-multiply" />
+        <div className="absolute top-8 -right-16 w-44 h-44 flex items-center justify-center">
+          <Image src="/Img3.png" alt="Food 3" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-contain" />
         </div>
-        <div className="absolute bottom-10 -left-10 w-44 h-44 overflow-visible animate-[bounce_6s_infinite_1.5s]">
-          <Image src="/Img5.png" alt="Food 4" fill className="object-contain mix-blend-multiply" />
+        <div className="absolute bottom-16 -left-16 w-52 h-52 flex items-center justify-center">
+          <Image src="/Img5.png" alt="Food 4" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-contain" />
         </div>
-        <div className="absolute bottom-20 left-[35%] w-32 h-32 overflow-visible animate-[bounce_8s_infinite_0.2s] z-10">
-          <Image src="/Img4.png" alt="Food 5" fill className="object-contain mix-blend-multiply" />
+        <div className="absolute bottom-24 left-[40%] w-40 h-40 z-10 flex items-center justify-center">
+          <Image src="/Img4.png" alt="Food 5" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-contain" />
         </div>
-        <div className="absolute bottom-0 -right-4 w-36 h-36 overflow-visible animate-[bounce_7s_infinite_0.8s]">
-          <Image src="/Img1.png" alt="Food 6" fill className="object-contain mix-blend-multiply" />
+        <div className="absolute bottom-4 -right-12 w-48 h-48 flex items-center justify-center">
+          <Image src="/Img1.png" alt="Food 6" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-contain" />
         </div>
       </div>
 

@@ -3,10 +3,10 @@
 @theme inline {
   --color-primary: #E85B52;
   --color-primary-hover: #CF4E46;
-  --color-background-start: #D2726F;
+  --color-background-start: #D1A3A0;
   --color-background-end: #FFFFFF;
   --color-text-main: #1A1A1A;
   --color-text-secondary: #808080;
-  
+
   --font-sans: var(--font-poppins);
 }
